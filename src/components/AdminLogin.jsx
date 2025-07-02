@@ -15,7 +15,7 @@ function AdminLogin() {
     e.preventDefault();
 
     try {
-      const response = await fetch("bank-admin-backend-production.up.railway.app/admin-login", {
+      const response = await fetch("https://bank-admin-backend-production.up.railway.app/admin-login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

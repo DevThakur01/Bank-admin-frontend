@@ -9,7 +9,7 @@ function MemberList() {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const response = await fetch("bank-admin-backend-production.up.railway.app/member-list");
+        const response = await fetch("https://bank-admin-backend-production.up.railway.app/member-list");
 
         if (!response.ok) {
           throw new Error("Failed to fetch member list.");

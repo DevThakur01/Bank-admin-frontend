@@ -10,7 +10,7 @@ function OverviewCards() {
   });
 
   useEffect(() => {
-    axios.get('bank-admin-backend-production.up.railway.app/summary')
+    axios.get('https://bank-admin-backend-production.up.railway.app/summary')
       .then((res) => setSummary(res.data))
       .catch((err) => console.error('Error fetching summary:', err));
   }, []);

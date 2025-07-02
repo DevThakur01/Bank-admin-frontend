@@ -22,7 +22,7 @@ function DeleteAccount() {
     console.log("Delete Request:", form);
 
     try {
-      const res = await fetch("bank-admin-backend-production.up.railway.app/delete-account", {
+      const res = await fetch("https://bank-admin-backend-production.up.railway.app/delete-account", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json"

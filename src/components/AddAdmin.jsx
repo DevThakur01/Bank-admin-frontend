@@ -22,7 +22,7 @@ function AddAdmin() {
     e.preventDefault();
 
     try {
-      const res = await fetch("bank-admin-backend-production.up.railway.app/create-admin", {
+      const res = await fetch("https://bank-admin-backend-production.up.railway.app/create-admin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

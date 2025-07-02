@@ -24,7 +24,7 @@ function DepositForm() {
     console.log('Deposit Request:', form);
 
     try {
-      const res = await fetch('bank-admin-backend-production.up.railway.app/deposit', {
+      const res = await fetch('https://bank-admin-backend-production.up.railway.app/deposit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

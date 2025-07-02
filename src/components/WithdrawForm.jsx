@@ -23,7 +23,7 @@ function WithdrawForm() {
     console.log("Withdraw Request:", form);
 
     try {
-      const res = await fetch("bank-admin-backend-production.up.railway.app/withdraw", {
+      const res = await fetch("https://bank-admin-backend-production.up.railway.app/withdraw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

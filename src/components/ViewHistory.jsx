@@ -15,7 +15,7 @@ function ViewHistory() {
     }
 
     try {
-      const response = await fetch(`bank-admin-backend-production.up.railway.app/transaction-history/${accountNumber}`);
+      const response = await fetch(`https://bank-admin-backend-production.up.railway.app/transaction-history/${accountNumber}`);
 
       if (!response.ok) {
         throw new Error("Account not found or server error");
