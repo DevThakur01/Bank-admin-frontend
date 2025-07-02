@@ -24,7 +24,7 @@ function TransferForm() {
     console.log("Transfer Request:", form);
 
     try {
-      const res = await fetch("http://localhost:8080/transfer", {
+      const res = await fetch("bank-admin-backend-production.up.railway.app/transfer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

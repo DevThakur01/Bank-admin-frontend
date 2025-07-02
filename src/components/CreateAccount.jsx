@@ -25,7 +25,7 @@ function CreateAccount() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8080/create-account", {
+      const res = await fetch("bank-admin-backend-production.up.railway.app/create-account", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
